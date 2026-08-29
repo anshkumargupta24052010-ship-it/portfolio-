@@ -3,7 +3,54 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ansh Gupta | Website Designer & Developer</title>
+
+    <!-- ========================================================== -->
+    <!-- 🚀 SEO OPTIMIZATION (META TAGS + STRUCTURED DATA)        -->
+    <!-- ========================================================== -->
+    <title>Ansh Kumar Gupta | Website Designer & Developer | Ambikapur, CG</title>
+    <meta name="description" content="Ansh Kumar Gupta - Website Designer & Developer in Ambikapur. Get premium websites with SEO, WhatsApp Integration, 6-month warranty, and AI security. First impression is the last impression." />
+    <meta name="keywords" content="Website designer Ambikapur, web developer Sargawa, fitness zone website, resort website, SEO expert Chhattisgarh, AI website security" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ansh-portfolio.netlify.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ansh Kumar Gupta | Website Designer & Developer" />
+    <meta property="og:description" content="First impression is the last impression. Get a premium website for your business with built-in AI security & SEO." />
+    <meta property="og:image" content="https://your-image-link.com/og-image.jpg" />
+    <meta property="og:url" content="https://ansh-portfolio.netlify.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Ansh Kumar Gupta - Web Designer",
+            "image": "https://your-image-link.com/avatar.png",
+            "description": "Professional website designer and developer in Ambikapur offering SEO, WhatsApp integration, and AI security.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ambikapur",
+                "addressRegion": "Chhattisgarh",
+                "addressCountry": "IN"
+            },
+            "telephone": "+918109944185",
+            "email": "anshkumargupta24052010@gmail.com",
+            "priceRange": "₹₹",
+            "openingHours": "Mo-Sa 09:00-21:00"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Ansh Kumar Gupta",
+            "jobTitle": "Website Designer & Developer",
+            "url": "https://ansh-portfolio.netlify.app/",
+            "telephone": "+918109944185",
+            "email": "anshkumargupta24052010@gmail.com"
+        }
+    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,9 +61,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <style>
-        /* ============================================================
-                   1.  CSS RESET & ROOT VARIABLES (LIGHT THEME)
-                   ============================================================ */
+        /* ==============================================================
+                   BASE & RESET (Light Theme)
+                   ============================================================== */
         *,
         *::before,
         *::after {
@@ -26,11 +73,9 @@
         }
 
         :root {
-            /* Core Colors */
             --bg-white: #ffffff;
             --bg-light: #f8fafc;
             --bg-soft-blue: #eff6ff;
-            --bg-warm: #fffbeb;
             --primary-blue: #2563eb;
             --primary-dark: #1e40af;
             --primary-glow: rgba(37, 99, 235, 0.25);
@@ -43,10 +88,8 @@
             --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.06);
             --shadow-lg: 0 10px 40px rgba(37, 99, 235, 0.12);
             --shadow-xl: 0 20px 60px rgba(37, 99, 235, 0.18);
-            --radius-sm: 8px;
             --radius-md: 16px;
             --radius-lg: 24px;
-            --radius-xl: 32px;
             --transition-smooth: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
             --transition-bounce: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
@@ -61,10 +104,8 @@
             color: var(--text-dark);
             line-height: 1.6;
             overflow-x: hidden;
-            cursor: default;
         }
 
-        /* Smooth selection */
         ::selection {
             background: var(--primary-blue);
             color: #fff;
@@ -74,10 +115,6 @@
             text-decoration: none;
             color: inherit;
         }
-        img {
-            max-width: 100%;
-            display: block;
-        }
 
         .container {
             max-width: 1200px;
@@ -85,9 +122,7 @@
             padding: 0 24px;
         }
 
-        /* ============================================================
-                   2.  SCROLL PROGRESS BAR (Top of page)
-                   ============================================================ */
+        /* Scroll Progress */
         #scroll-progress {
             position: fixed;
             top: 0;
@@ -97,13 +132,10 @@
             background: linear-gradient(90deg, var(--primary-blue), #7c3aed);
             z-index: 9999;
             border-radius: 0 4px 4px 0;
-            transition: width 0.1s linear;
             box-shadow: 0 0 20px var(--primary-glow);
         }
 
-        /* ============================================================
-                   3.  BUTTONS & UTILITY
-                   ============================================================ */
+        /* Buttons */
         .btn-primary {
             display: inline-flex;
             align-items: center;
@@ -130,7 +162,6 @@
             opacity: 0;
             transition: var(--transition-smooth);
             z-index: -1;
-            border-radius: 50px;
         }
         .btn-primary:hover {
             transform: translateY(-3px) scale(1.02);
@@ -164,7 +195,6 @@
             transform-origin: right;
             transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
             z-index: -1;
-            border-radius: 50px;
         }
         .btn-outline:hover {
             color: #fff;
@@ -175,17 +205,16 @@
             transform-origin: left;
         }
 
-        /* ============================================================
-                   4.  HEADER / NAVIGATION
-                   ============================================================ */
+        /* ==============================================================
+                   HEADER
+                   ============================================================== */
         header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.82);
+            background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(16px) saturate(180%);
-            -webkit-backdrop-filter: blur(16px);
             box-shadow: var(--shadow-xs);
             z-index: 999;
             padding: 14px 0;
@@ -207,13 +236,9 @@
             font-weight: 800;
             color: var(--primary-blue);
             letter-spacing: -0.5px;
-            transition: var(--transition-smooth);
         }
         .logo span {
             color: var(--text-dark);
-        }
-        .logo:hover {
-            transform: scale(1.04);
         }
 
         .nav-links {
@@ -260,9 +285,7 @@
         }
         .nav-cta:hover {
             background: var(--primary-dark);
-            color: #fff !important;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px var(--primary-glow);
         }
 
         .hamburger {
@@ -294,9 +317,9 @@
             transform: translateY(-8px) rotate(-45deg);
         }
 
-        /* ============================================================
-                   5.  HERO SECTION (with Floating Elements)
-                   ============================================================ */
+        /* ==============================================================
+                   HERO
+                   ============================================================== */
         #home {
             padding: 160px 0 100px;
             background: linear-gradient(160deg, #f0f9ff 0%, #fef9e7 60%, #ffffff 100%);
@@ -307,7 +330,6 @@
             overflow: hidden;
         }
 
-        /* Floating orbs in background */
         .hero-orb {
             position: absolute;
             border-radius: 50%;
@@ -322,7 +344,6 @@
             background: #60a5fa;
             top: -100px;
             right: -100px;
-            animation-delay: 0s;
         }
         .hero-orb.orb2 {
             width: 300px;
@@ -359,7 +380,6 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            margin-bottom: 4px;
         }
         .hero-content .greeting span {
             display: inline-block;
@@ -379,7 +399,6 @@
             font-size: 3.8rem;
             font-weight: 800;
             line-height: 1.12;
-            margin-bottom: 4px;
         }
         .hero-content h1 .highlight {
             color: var(--primary-blue);
@@ -396,10 +415,8 @@
             background: rgba(37, 99, 235, 0.18);
             border-radius: 6px;
             z-index: -1;
-            transition: var(--transition-smooth);
         }
 
-        /* Typing effect */
         .hero-tagline {
             font-size: 1.3rem;
             color: var(--text-gray);
@@ -452,7 +469,6 @@
             flex-wrap: wrap;
         }
 
-        /* Hero Avatar */
         .hero-avatar {
             display: flex;
             justify-content: center;
@@ -510,7 +526,6 @@
         }
         .avatar-circle:hover {
             transform: scale(1.04);
-            box-shadow: 0 30px 60px -12px rgba(37, 99, 235, 0.55);
         }
         .avatar-circle span {
             font-size: 6.5rem;
@@ -520,7 +535,6 @@
             text-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         }
 
-        /* Stats Badge on Hero */
         .hero-stats {
             display: flex;
             gap: 30px;
@@ -543,9 +557,9 @@
             font-weight: 500;
         }
 
-        /* ============================================================
-                   6.  SECTION TITLES
-                   ============================================================ */
+        /* ==============================================================
+                   SECTIONS TITLE
+                   ============================================================== */
         section {
             padding: 100px 0;
         }
@@ -592,9 +606,9 @@
             margin: 8px auto 0;
         }
 
-        /* ============================================================
-                   7.  SERVICES (with shimmer hover)
-                   ============================================================ */
+        /* ==============================================================
+                   SERVICES
+                   ============================================================== */
         #services {
             background: var(--bg-light);
         }
@@ -672,9 +686,9 @@
             z-index: 1;
         }
 
-        /* ============================================================
-                   8.  SKILLS / TOOLS (Progress Bars)
-                   ============================================================ */
+        /* ==============================================================
+                   SKILLS
+                   ============================================================== */
         #skills {
             background: var(--bg-white);
         }
@@ -687,7 +701,6 @@
             font-size: 1.1rem;
             font-weight: 600;
             margin-bottom: 20px;
-            color: var(--text-dark);
         }
         .skill-item {
             margin-bottom: 18px;
@@ -714,9 +727,9 @@
             transition: width 1.5s cubic-bezier(0.23, 1, 0.32, 1);
         }
 
-        /* ============================================================
-                   9.  PROJECTS (3D Tilt on Hover)
-                   ============================================================ */
+        /* ==============================================================
+                   PROJECTS
+                   ============================================================== */
         #projects {
             background: var(--bg-light);
         }
@@ -736,7 +749,7 @@
             transition: var(--transition-smooth);
             transform-style: preserve-3d;
             perspective: 800px;
-            cursor: pointer;
+            cursor: default;
         }
         .project-card:hover {
             transform: translateY(-10px) rotateX(2deg) rotateY(4deg);
@@ -772,7 +785,9 @@
         }
         .project-thumb .badge.soon {
             background: var(--accent-gold);
-            box-shadow: 0 2px 10px rgba(245, 158, 11, 0.3);
+        }
+        .project-thumb .badge.showcase {
+            background: #8b5cf6;
         }
 
         .project-thumb .overlay-shine {
@@ -833,9 +848,9 @@
             transform: translateX(6px) scale(1.2);
         }
 
-        /* ============================================================
-                   10. TESTIMONIALS
-                   ============================================================ */
+        /* ==============================================================
+                   TESTIMONIALS
+                   ============================================================== */
         #testimonials {
             background: var(--bg-soft-blue);
         }
@@ -863,11 +878,9 @@
             color: var(--accent-gold);
             margin-bottom: 12px;
             letter-spacing: 3px;
-            font-size: 1.1rem;
         }
         .testimonial-card blockquote {
             font-size: 1rem;
-            color: var(--text-dark);
             font-style: italic;
             margin-bottom: 18px;
             line-height: 1.7;
@@ -898,75 +911,9 @@
             color: var(--text-gray);
         }
 
-        /* ============================================================
-                   11. FAQ SECTION (Accordion)
-                   ============================================================ */
-        #faq {
-            background: var(--bg-white);
-        }
-        .faq-list {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        .faq-item {
-            background: var(--bg-light);
-            border-radius: var(--radius-sm);
-            overflow: hidden;
-            border: 1px solid #e2e8f0;
-            transition: var(--transition-smooth);
-        }
-        .faq-item:hover {
-            border-color: var(--primary-blue);
-        }
-        .faq-question {
-            width: 100%;
-            padding: 18px 24px;
-            background: none;
-            border: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text-dark);
-            cursor: pointer;
-            font-family: 'Inter', sans-serif;
-            text-align: left;
-            gap: 16px;
-            transition: var(--transition-smooth);
-        }
-        .faq-question:hover {
-            color: var(--primary-blue);
-        }
-        .faq-question i {
-            transition: var(--transition-smooth);
-            font-size: 1.2rem;
-            color: var(--primary-blue);
-        }
-        .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-        }
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-            padding: 0 24px;
-        }
-        .faq-item.active .faq-answer {
-            max-height: 200px;
-            padding: 0 24px 20px;
-        }
-        .faq-answer p {
-            color: var(--text-gray);
-            padding-bottom: 4px;
-        }
-
-        /* ============================================================
-                   12. CONTACT
-                   ============================================================ */
+        /* ==============================================================
+                   CONTACT
+                   ============================================================== */
         #contact {
             background: var(--bg-light);
         }
@@ -980,10 +927,6 @@
             border-radius: var(--radius-lg);
             box-shadow: var(--shadow-md);
             border: 1px solid #f1f5f9;
-            transition: var(--transition-smooth);
-        }
-        .contact-wrapper:hover {
-            box-shadow: var(--shadow-lg);
         }
 
         .contact-info h3 {
@@ -1001,9 +944,9 @@
             align-items: center;
             gap: 16px;
             margin-bottom: 20px;
-            transition: var(--transition-smooth);
             padding: 6px 12px;
             border-radius: var(--radius-sm);
+            transition: var(--transition-smooth);
         }
         .contact-item:hover {
             background: var(--bg-soft-blue);
@@ -1089,9 +1032,9 @@
             justify-content: center;
         }
 
-        /* ============================================================
-                   13. FOOTER
-                   ============================================================ */
+        /* ==============================================================
+                   FOOTER
+                   ============================================================== */
         footer {
             background: var(--text-dark);
             color: rgba(255, 255, 255, 0.6);
@@ -1119,9 +1062,9 @@
             transform: translateY(-3px);
         }
 
-        /* ============================================================
-                   14. REVEAL / SCROLL ANIMATIONS (Intersection Observer)
-                   ============================================================ */
+        /* ==============================================================
+                   REVEAL ANIMATIONS
+                   ============================================================== */
         .reveal {
             opacity: 0;
             transform: translateY(50px);
@@ -1132,27 +1075,6 @@
             transform: translateY(0);
         }
 
-        .reveal-left {
-            opacity: 0;
-            transform: translateX(-60px);
-            transition: opacity 0.9s ease, transform 0.9s ease;
-        }
-        .reveal-left.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .reveal-right {
-            opacity: 0;
-            transform: translateX(60px);
-            transition: opacity 0.9s ease, transform 0.9s ease;
-        }
-        .reveal-right.active {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        /* Stagger children */
         .stagger-children>* {
             opacity: 0;
             transform: translateY(40px);
@@ -1188,15 +1110,176 @@
             opacity: 1;
             transform: translateY(0);
         }
-        .stagger-children.active>*:nth-child(7) {
-            transition-delay: 0.65s;
-            opacity: 1;
-            transform: translateY(0);
+
+        /* ==============================================================
+                   AI CHATBOT FLOATING WIDGET
+                   ============================================================== */
+        .chatbot-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: #fff;
+            border: none;
+            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 1000;
+            transition: var(--transition-bounce);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chatbot-toggle:hover {
+            transform: scale(1.1) rotate(-8deg);
+            box-shadow: 0 12px 40px rgba(37, 99, 235, 0.5);
         }
 
-        /* ============================================================
-                   15. RESPONSIVE BREAKPOINTS
-                   ============================================================ */
+        .chatbot-window {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            width: 380px;
+            max-height: 520px;
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            border: 1px solid #f1f5f9;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 1000;
+            animation: slideUp 0.3s ease;
+        }
+        .chatbot-window.open {
+            display: flex;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .chatbot-header {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: #fff;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        .chatbot-header h4 {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .chatbot-header .close-bot {
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+        .chatbot-header .close-bot:hover {
+            color: #fff;
+        }
+
+        .chatbot-messages {
+            padding: 16px 20px;
+            overflow-y: auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: 340px;
+            background: #fafafa;
+        }
+
+        .chatbot-messages .msg {
+            max-width: 85%;
+            padding: 10px 16px;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            animation: fadeInMsg 0.3s ease;
+        }
+        @keyframes fadeInMsg {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .chatbot-messages .msg.bot {
+            background: var(--bg-white);
+            border: 1px solid #e2e8f0;
+            border-bottom-left-radius: 4px;
+            align-self: flex-start;
+            color: var(--text-dark);
+        }
+        .chatbot-messages .msg.user {
+            background: var(--primary-blue);
+            color: #fff;
+            border-bottom-right-radius: 4px;
+            align-self: flex-end;
+        }
+
+        .chatbot-footer {
+            padding: 12px 16px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            gap: 8px;
+            background: #fff;
+            flex-shrink: 0;
+        }
+        .chatbot-footer input {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-family: 'Inter', sans-serif;
+            transition: var(--transition-smooth);
+        }
+        .chatbot-footer input:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+        }
+        .chatbot-footer button {
+            background: var(--primary-blue);
+            color: #fff;
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            flex-shrink: 0;
+        }
+        .chatbot-footer button:hover {
+            background: var(--primary-dark);
+            transform: scale(1.05);
+        }
+
+        /* ==============================================================
+                   RESPONSIVE
+                   ============================================================== */
         @media (max-width: 1024px) {
             .hero-grid {
                 gap: 40px;
@@ -1230,9 +1313,6 @@
             .hero-stats {
                 justify-content: center;
             }
-            .hero-tagline {
-                justify-content: center;
-            }
             .avatar-ring {
                 width: 220px;
                 height: 220px;
@@ -1257,6 +1337,11 @@
             }
             .projects-grid {
                 grid-template-columns: 1fr;
+            }
+            .chatbot-window {
+                width: 320px;
+                right: 16px;
+                bottom: 100px;
             }
         }
 
@@ -1325,39 +1410,28 @@
             section {
                 padding: 60px 0;
             }
-        }
-
-        /* ============================================================
-                   16. PRINT STYLES (Optional)
-                   ============================================================ */
-        @media print {
-            header,
-            #scroll-progress,
-            .hero-orb {
-                display: none !important;
+            .chatbot-window {
+                width: 290px;
+                right: 10px;
+                bottom: 90px;
+                max-height: 450px;
             }
-            .reveal {
-                opacity: 1 !important;
-                transform: none !important;
-            }
-            body {
-                background: #fff !important;
-            }
-            .project-card,
-            .service-card,
-            .testimonial-card {
-                box-shadow: none !important;
-                border: 1px solid #ccc !important;
+            .chatbot-toggle {
+                width: 56px;
+                height: 56px;
+                font-size: 1.6rem;
+                bottom: 20px;
+                right: 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- ========== SCROLL PROGRESS BAR ========== -->
+    <!-- Scroll Progress -->
     <div id="scroll-progress"></div>
 
-    <!-- ========== HEADER ========== -->
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="container">
             <nav>
@@ -1367,7 +1441,6 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Work</a></li>
-                    <li><a href="#testimonials">Reviews</a></li>
                     <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
                 </ul>
                 <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -1377,7 +1450,7 @@
         </div>
     </header>
 
-    <!-- ========== HERO ========== -->
+    <!-- ===== HERO ===== -->
     <section id="home">
         <div class="hero-orb orb1"></div>
         <div class="hero-orb orb2"></div>
@@ -1405,7 +1478,7 @@
                             <span class="label">Completed Projects</span>
                         </div>
                         <div class="stat-item">
-                            <span class="number" data-count="7">0</span>
+                            <span class="number" data-count="6">0</span>
                             <span class="label">Services Offered</span>
                         </div>
                         <div class="stat-item">
@@ -1425,71 +1498,41 @@
         </div>
     </section>
 
-    <!-- ========== SERVICES ========== -->
+    <!-- ===== SERVICES ===== -->
     <section id="services">
         <div class="container">
             <div class="section-title reveal">
                 <span class="subtitle">What I Deliver</span>
                 <h2>Premium <span>Services</span></h2>
-                <p>Every website I build comes packed with these enterprise-grade features — no hidden costs.</p>
+                <p>Every website comes packed with AI, SEO, and enterprise-grade features.</p>
             </div>
             <div class="services-grid stagger-children">
-                <div class="service-card">
-                    <div class="icon"><i class="fas fa-magnifying-glass-chart"></i></div>
-                    <h3>Search Engine Optimization</h3>
-                    <p>Built-in SEO so your clients find you easily on Google.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon"><i class="fab fa-whatsapp"></i></div>
-                    <h3>WhatsApp Integration</h3>
-                    <p>Direct one-click chat to convert visitors into leads instantly.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon"><i class="fas fa-shield-halved"></i></div>
-                    <h3>6-Month Warranty</h3>
-                    <p>If your site breaks down, I fix it immediately — absolutely free.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Responsive UI Design</h3>
-                    <p>Flawless experience on mobile, tablet, and desktop — guaranteed.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon"><i class="fas fa-robot"></i></div>
-                    <h3>LLM Anti-Hacking System</h3>
-                    <p>AI-powered smart threat detection to keep your site safe.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon"><i class="fas fa-ban"></i></div>
-                    <h3>Dev Tool Blocking</h3>
-                    <p>Protects your code from being copied or inspected.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon"><i class="fas fa-lock"></i></div>
-                    <h3>Domain Security Lock</h3>
-                    <p>Advanced domain-level security to prevent hijacking.</p>
-                </div>
+                <div class="service-card"><div class="icon"><i class="fas fa-magnifying-glass-chart"></i></div><h3>Search Engine Optimization</h3><p>Built-in SEO + Schema markup to rank #1 in local searches.</p></div>
+                <div class="service-card"><div class="icon"><i class="fab fa-whatsapp"></i></div><h3>WhatsApp Integration</h3><p>Direct one-click chat to convert visitors into instant leads.</p></div>
+                <div class="service-card"><div class="icon"><i class="fas fa-shield-halved"></i></div><h3>6-Month Warranty</h3><p>Free fixes for 6 months if anything breaks or glitches.</p></div>
+                <div class="service-card"><div class="icon"><i class="fas fa-laptop-code"></i></div><h3>Responsive UI Design</h3><p>Flawless experience on mobile, tablet, and desktop.</p></div>
+                <div class="service-card" id="aiService"><div class="icon"><i class="fas fa-robot"></i></div><h3>🤖 AI LLM Assistant</h3><p>Live AI chatbot (Gemini) to handle client queries 24/7. (Click me!)</p></div>
+                <div class="service-card"><div class="icon"><i class="fas fa-ban"></i></div><h3>Dev Tool Blocking</h3><p>Protects your website code from being copied or inspected.</p></div>
             </div>
         </div>
     </section>
 
-    <!-- ========== SKILLS ========== -->
+    <!-- ===== SKILLS ===== -->
     <section id="skills">
         <div class="container">
             <div class="section-title reveal">
                 <span class="subtitle">My Expertise</span>
                 <h2>Tools &amp; <span>Technologies</span></h2>
-                <p>I work with modern tech to build fast, secure, and beautiful websites.</p>
             </div>
             <div class="skills-wrapper">
                 <div class="skill-group reveal">
                     <h4>🎨 Design &amp; Frontend</h4>
                     <div class="skill-item"><div class="skill-info"><span>HTML / CSS</span><span>95%</span></div><div class="skill-bar"><div class="fill" data-width="95"></div></div></div>
                     <div class="skill-item"><div class="skill-info"><span>JavaScript</span><span>85%</span></div><div class="skill-bar"><div class="fill" data-width="85"></div></div></div>
-                    <div class="skill-item"><div class="skill-info"><span>Figma / UI Design</span><span>80%</span></div><div class="skill-bar"><div class="fill" data-width="80"></div></div></div>
+                    <div class="skill-item"><div class="skill-info"><span>Figma / UI</span><span>80%</span></div><div class="skill-bar"><div class="fill" data-width="80"></div></div></div>
                 </div>
                 <div class="skill-group reveal">
-                    <h4>⚙️ Development &amp; CMS</h4>
+                    <h4>⚙️ Dev &amp; CMS</h4>
                     <div class="skill-item"><div class="skill-info"><span>WordPress</span><span>90%</span></div><div class="skill-bar"><div class="fill" data-width="90"></div></div></div>
                     <div class="skill-item"><div class="skill-info"><span>React / Bootstrap</span><span>75%</span></div><div class="skill-bar"><div class="fill" data-width="75"></div></div></div>
                     <div class="skill-item"><div class="skill-info"><span>Node.js / PHP</span><span>70%</span></div><div class="skill-bar"><div class="fill" data-width="70"></div></div></div>
@@ -1498,131 +1541,92 @@
         </div>
     </section>
 
-    <!-- ========== PROJECTS ========== -->
+    <!-- ===== PROJECTS ===== -->
     <section id="projects">
         <div class="container">
             <div class="section-title reveal">
                 <span class="subtitle">Portfolio</span>
                 <h2>Recent <span>Projects</span></h2>
-                <p>Live, upcoming, and demo work that proves my expertise.</p>
             </div>
             <div class="projects-grid stagger-children">
                 <div class="project-card">
                     <div class="project-thumb" style="background: linear-gradient(145deg, #dcfce7, #bbf7d0); color: #15803d;">
                         💪 Fitness Zone
-                        <span class="badge"><i class="fas fa-circle" style="font-size: 0.5rem; margin-right: 4px;"></i> Live</span>
+                        <span class="badge"><i class="fas fa-circle" style="font-size:0.5rem;"></i> Live</span>
                         <div class="overlay-shine"></div>
                     </div>
                     <div class="project-info">
-                        <span class="category">🏋️ Health &amp; Fitness</span>
+                        <span class="category">🏋️ Health</span>
                         <h3>Fitness Zone Gym</h3>
-                        <p>Dynamic, high-energy responsive website to attract new gym members.</p>
-                        <p class="tech"><i class="fas fa-code"></i> HTML, CSS, JavaScript</p>
-                        <a href="#" class="project-link" target="_blank">Visit Site <i class="fas fa-arrow-right"></i></a>
+                        <p>Dynamic, high-energy responsive website to attract new members.</p>
+                        <p class="tech"><i class="fas fa-code"></i> HTML, CSS, JS</p>
+                        <a href="#" class="project-link">Visit Site <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-thumb" style="background: linear-gradient(145deg, #fef3c7, #fde68a); color: #b45309;">
                         🏨 Sargawa Palace
-                        <span class="badge soon"><i class="fas fa-clock"></i> Coming Soon</span>
+                        <span class="badge soon"><i class="fas fa-clock"></i> Soon</span>
                         <div class="overlay-shine"></div>
                     </div>
                     <div class="project-info">
-                        <span class="category">🏝️ Hospitality / Resort</span>
+                        <span class="category">🏝️ Hospitality</span>
                         <h3>The Palace Resort</h3>
-                        <p>Premium, classy resort website highlighting luxury rooms and amenities.</p>
-                        <p class="tech"><i class="fas fa-code"></i> React, Tailwind, Node.js</p>
-                        <span class="project-link" style="color: var(--text-light); cursor: default;">🚀 Launching very soon</span>
+                        <p>Premium resort website highlighting luxury rooms & amenities.</p>
+                        <p class="tech"><i class="fas fa-code"></i> React, Tailwind</p>
+                        <span class="project-link" style="color:var(--text-light);cursor:default;">🚀 Launching soon</span>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-thumb" style="background: linear-gradient(145deg, #e0e7ff, #c7d2fe); color: #4338ca;">
                         🧩 Demo Vault
-                        <span class="badge" style="background: #8b5cf6;">Showcase</span>
+                        <span class="badge showcase"><i class="fas fa-star"></i> Showcase</span>
                         <div class="overlay-shine"></div>
                     </div>
                     <div class="project-info">
-                        <span class="category">📁 Portfolio / Demos</span>
+                        <span class="category">📁 Portfolio</span>
                         <h3>Multiple Demo Projects</h3>
                         <p>From e-commerce to admin dashboards — I have plenty to show on demand.</p>
                         <p class="tech"><i class="fas fa-code"></i> WordPress, PHP, Bootstrap</p>
-                        <a href="#" class="project-link" onclick="alert('Bro, send me a message and I will share all my demo projects with you! 🚀'); return false;">
-                            Request Demo <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <a href="https://wa.me/918109944185" target="_blank" class="project-link">Request Demo <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== TESTIMONIALS ========== -->
+    <!-- ===== TESTIMONIALS ===== -->
     <section id="testimonials">
         <div class="container">
             <div class="section-title reveal">
                 <span class="subtitle">Client Feedback</span>
                 <h2>What My <span>Clients Say</span></h2>
-                <p>Real feedback from the people I've worked with.</p>
             </div>
             <div class="testimonials-grid stagger-children">
                 <div class="testimonial-card">
                     <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <blockquote>"Ansh delivered a powerful, fast-loading website for our gym. Within weeks, we saw a huge jump in membership inquiries. Highly recommended!"</blockquote>
-                    <div class="client">
-                        <div class="avatar-small">RS</div>
-                        <div><div class="name">Rahul Singh</div><div class="role">Owner, Fitness Zone Gym</div></div>
-                    </div>
+                    <blockquote>"Ansh delivered a powerful, fast-loading website. Within weeks, we saw a huge jump in membership inquiries!"</blockquote>
+                    <div class="client"><div class="avatar-small">RS</div><div><div class="name">Rahul Singh</div><div class="role">Owner, Fitness Zone</div></div></div>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <blockquote>"The resort website looks absolutely premium and high-end. Ansh understood our brand vibe perfectly and delivered way ahead of schedule."</blockquote>
-                    <div class="client">
-                        <div class="avatar-small">SS</div>
-                        <div><div class="name">Mr. Sharma</div><div class="role">Manager, Sargawa Palace Resort</div></div>
-                    </div>
+                    <blockquote>"The resort website looks absolutely premium. Ansh understood our brand vibe perfectly and delivered ahead of schedule."</blockquote>
+                    <div class="client"><div class="avatar-small">SS</div><div><div class="name">Mr. Sharma</div><div class="role">Manager, Palace Resort</div></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== FAQ ========== -->
-    <section id="faq">
-        <div class="container">
-            <div class="section-title reveal">
-                <span class="subtitle">Got Questions?</span>
-                <h2>Frequently Asked <span>Questions</span></h2>
-            </div>
-            <div class="faq-list reveal">
-                <div class="faq-item active">
-                    <button class="faq-question"><span>Do you provide free maintenance?</span> <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer"><p>Absolutely! I give a <strong>6-month warranty</strong> on every website. If anything breaks, I fix it immediately without charging a single penny.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question"><span>Can you integrate WhatsApp with my site?</span> <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer"><p>Yes! I add a direct WhatsApp chat button so your visitors can instantly message you with one click.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question"><span>How secure is the website?</span> <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer"><p>I implement <strong>LLM anti-hacking systems, domain security locks, and dev tool blocking</strong> to ensure your site is fully protected from threats.</p></div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question"><span>Is the website mobile-friendly?</span> <i class="fas fa-chevron-down"></i></button>
-                    <div class="faq-answer"><p>100%! Every site I design is fully responsive across all devices — mobile, tablet, and desktop.</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== CONTACT ========== -->
+    <!-- ===== CONTACT ===== -->
     <section id="contact">
         <div class="container">
             <div class="section-title reveal">
                 <span class="subtitle">Let's Connect</span>
                 <h2>Get In <span>Touch</span></h2>
-                <p>Have a project in mind? Reach out to me anytime.</p>
             </div>
             <div class="contact-wrapper reveal">
                 <div class="contact-info">
-                    <h3>Let's Build Something <br />Amazing Together</h3>
+                    <h3>Let's Build Something <br />Amazing</h3>
                     <p>I'm just one message away. Let's make your business shine online.</p>
                     <div class="contact-item">
                         <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
@@ -1637,11 +1641,11 @@
                         <div><strong>Location</strong><br />Ambikapur, Chhattisgarh</div>
                     </div>
                     <div class="social-links">
-                        <a href="#" aria-label="Instagram (Coming soon)"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn (Coming soon)"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/918109944185" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/918109944185" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
-                    <p style="margin-top: 14px; font-size: 0.85rem; color: var(--text-light);"><i class="fas fa-clock"></i> Social pages coming soon!</p>
+                    <p style="margin-top:14px;font-size:0.85rem;color:var(--text-light);"><i class="fas fa-clock"></i> Social pages coming soon!</p>
                 </div>
                 <form class="contact-form" action="mailto:anshkumargupta24052010@gmail.com" method="post" enctype="text/plain">
                     <input type="text" placeholder="Your Name" required />
@@ -1649,42 +1653,61 @@
                     <input type="text" placeholder="Subject" />
                     <textarea placeholder="Tell me about your project..." required></textarea>
                     <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
-                    <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 10px; text-align: center;">
-                        Or <a href="https://wa.me/918109944185" style="color: var(--primary-blue); font-weight: 600;" target="_blank">ping me on WhatsApp</a> for a faster reply!
+                    <p style="font-size:0.8rem;color:var(--text-light);margin-top:10px;text-align:center;">
+                        Or <a href="https://wa.me/918109944185" style="color:var(--primary-blue);font-weight:600;" target="_blank">ping me on WhatsApp</a>
                     </p>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- ========== FOOTER ========== -->
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="container">
             <div class="footer-social">
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://wa.me/918109944185" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/918109944185" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
             <p>&copy; 2025 <span>Ansh Kumar Gupta</span>. Built with ❤️ for Ambikapur &amp; beyond.</p>
-            <p style="font-size: 0.8rem; margin-top: 4px; color: rgba(255,255,255,0.4);">First impression is the last impression — make it count.</p>
+            <p style="font-size:0.8rem;margin-top:4px;color:rgba(255,255,255,0.4);">🤖 Powered by Google Gemini AI | Premium Web Solutions</p>
         </div>
     </footer>
 
-    <!-- ================================================================
-    JAVASCRIPT (All Animations, Interactions, Counter, Typing)
-    ================================================================ -->
+    <!-- ========================================================== -->
+    <!-- 🤖 AI CHATBOT FLOATING WIDGET (Gemini Integrated)        -->
+    <!-- ========================================================== -->
+    <button class="chatbot-toggle" id="chatToggle" aria-label="Chat with AI Assistant">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <div class="chatbot-window" id="chatWindow">
+        <div class="chatbot-header">
+            <h4><i class="fas fa-robot"></i> Ansh's AI Assistant</h4>
+            <button class="close-bot" id="chatClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="msg bot">👋 Hello! I'm Ansh's AI assistant, powered by Google Gemini. Ask me anything about his services, pricing, or projects!</div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" id="chatInput" placeholder="Ask me anything..." />
+            <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- ========================================================== -->
+    <!-- JAVASCRIPT (All Animations + Gemini AI Chat)              -->
+    <!-- ========================================================== -->
     <script>
-        // ============================================================
-        // 1. MOBILE MENU TOGGLE
-        // ============================================================
+        // ==============================================================
+        // 1. MOBILE MENU
+        // ==============================================================
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
-
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('open');
         });
-
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
@@ -1692,102 +1715,71 @@
             });
         });
 
-        // ============================================================
-        // 2. SCROLL PROGRESS BAR
-        // ============================================================
+        // ==============================================================
+        // 2. SCROLL PROGRESS
+        // ==============================================================
         const progressBar = document.getElementById('scroll-progress');
         window.addEventListener('scroll', () => {
             const scrollTop = window.scrollY;
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const progress = (scrollTop / docHeight) * 100;
-            progressBar.style.width = progress + '%';
+            progressBar.style.width = (scrollTop / docHeight) * 100 + '%';
         });
 
-        // ============================================================
-        // 3. HEADER SHADOW ON SCROLL
-        // ============================================================
+        // ==============================================================
+        // 3. HEADER SHADOW
+        // ==============================================================
         const header = document.querySelector('header');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 20) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
+            header.classList.toggle('scrolled', window.scrollY > 20);
         });
 
-        // ============================================================
-        // 4. TYPING EFFECT (Manual Implementation)
-        // ============================================================
+        // ==============================================================
+        // 4. TYPING EFFECT
+        // ==============================================================
         const typedTexts = ['Website Designer', 'Problem Solver', 'Business Growth Partner'];
-        let textIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
+        let textIndex = 0,
+            charIndex = 0,
+            isDeleting = false;
         const typedElement = document.getElementById('typed-text');
 
         function typeEffect() {
-            const currentText = typedTexts[textIndex];
-            if (isDeleting) {
-                typedElement.textContent = currentText.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                typedElement.textContent = currentText.substring(0, charIndex + 1);
-                charIndex++;
-            }
-
+            const current = typedTexts[textIndex];
+            typedElement.textContent = isDeleting ? current.substring(0, charIndex - 1) : current.substring(0, charIndex + 1);
+            isDeleting ? charIndex-- : charIndex++;
             let speed = isDeleting ? 60 : 120;
-
-            if (!isDeleting && charIndex === currentText.length) {
-                speed = 2000; // Pause at end
-                isDeleting = true;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
+            if (!isDeleting && charIndex === current.length) { speed = 2000;
+                isDeleting = true; }
+            if (isDeleting && charIndex === 0) { isDeleting = false;
                 textIndex = (textIndex + 1) % typedTexts.length;
-                speed = 400;
-            }
-
+                speed = 400; }
             setTimeout(typeEffect, speed);
         }
         typeEffect();
 
-        // ============================================================
-        // 5. SCROLL REVEAL (Intersection Observer + Stagger)
-        // ============================================================
-        const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-        const staggerElements = document.querySelectorAll('.stagger-children');
+        // ==============================================================
+        // 5. SCROLL REVEAL
+        // ==============================================================
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => e.target.classList.add('active'));
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal, .stagger-children').forEach(el => observer.observe(el));
 
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, {
-            threshold: 0.15,
-            rootMargin: '0px 0px -40px 0px'
-        });
-
-        revealElements.forEach(el => revealObserver.observe(el));
-        staggerElements.forEach(el => revealObserver.observe(el));
-
-        // ============================================================
-        // 6. COUNTER ANIMATION (Numbers)
-        // ============================================================
-        const counters = document.querySelectorAll('.stat-item .number');
+        // ==============================================================
+        // 6. COUNTER ANIMATION
+        // ==============================================================
         let countersAnimated = false;
 
         function animateCounters() {
             if (countersAnimated) return;
-            const isVisible = counters[0] && counters[0].closest('.hero-stats').getBoundingClientRect().top < window
-            .innerHeight - 100;
+            const isVisible = document.querySelector('.hero-stats').getBoundingClientRect().top < window.innerHeight - 100;
             if (!isVisible) return;
-
             countersAnimated = true;
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-count'));
+            document.querySelectorAll('.stat-item .number').forEach(counter => {
+                const target = parseInt(counter.dataset.count);
                 let current = 0;
-                const increment = target / 80;
+                const inc = target / 80;
                 const timer = setInterval(() => {
-                    current += increment;
+                    current += inc;
                     if (current >= target) {
                         counter.textContent = target + (target === 100 ? '%' : '+');
                         clearInterval(timer);
@@ -1797,75 +1789,115 @@
                 }, 20);
             });
         }
-
-        // Check counters on load and scroll
         window.addEventListener('scroll', animateCounters);
         window.addEventListener('load', animateCounters);
 
-        // ============================================================
-        // 7. SKILL BARS ANIMATION
-        // ============================================================
-        const skillFills = document.querySelectorAll('.skill-bar .fill');
+        // ==============================================================
+        // 7. SKILL BARS
+        // ==============================================================
         let skillsAnimated = false;
 
         function animateSkills() {
             if (skillsAnimated) return;
-            const isVisible = skillFills[0] && skillFills[0].closest('#skills').getBoundingClientRect().top < window
-                .innerHeight - 100;
+            const isVisible = document.querySelector('#skills').getBoundingClientRect().top < window.innerHeight - 100;
             if (!isVisible) return;
-
             skillsAnimated = true;
-            skillFills.forEach(fill => {
-                const width = fill.getAttribute('data-width');
-                setTimeout(() => {
-                    fill.style.width = width + '%';
-                }, 200);
+            document.querySelectorAll('.skill-bar .fill').forEach(fill => {
+                setTimeout(() => { fill.style.width = fill.dataset.width + '%'; }, 200);
             });
         }
-
         window.addEventListener('scroll', animateSkills);
         window.addEventListener('load', animateSkills);
 
-        // ============================================================
-        // 8. FAQ ACCORDION
-        // ============================================================
-        const faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            question.addEventListener('click', () => {
-                // Close all others
-                faqItems.forEach(other => {
-                    if (other !== item) other.classList.remove('active');
+        // ==============================================================
+        // 8. 🤖 GEMINI AI CHATBOT (Real AI Integration)
+        // ==============================================================
+        const GEMINI_API_KEY = 'AIzaSyDHsYKRRTrjd6UmhnfYUN0Ogr7MF4vkwuM';
+        const GEMINI_URL =
+            `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`;
+
+        // Chat UI elements
+        const chatToggle = document.getElementById('chatToggle');
+        const chatWindow = document.getElementById('chatWindow');
+        const chatClose = document.getElementById('chatClose');
+        const chatInput = document.getElementById('chatInput');
+        const chatSend = document.getElementById('chatSend');
+        const chatMessages = document.getElementById('chatMessages');
+
+        chatToggle.addEventListener('click', () => {
+            chatWindow.classList.toggle('open');
+            if (chatWindow.classList.contains('open')) chatInput.focus();
+        });
+        chatClose.addEventListener('click', () => chatWindow.classList.remove('open'));
+
+        function addMessage(text, sender) {
+            const div = document.createElement('div');
+            div.className = `msg ${sender}`;
+            div.textContent = text;
+            chatMessages.appendChild(div);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Click on AI Service card opens chatbot
+        document.getElementById('aiService').addEventListener('click', () => {
+            chatWindow.classList.add('open');
+            chatInput.focus();
+            addMessage('👋 Hi! I see you clicked on the AI Service card. Ask me anything about Ansh\'s AI features!', 'bot');
+        });
+
+        async function sendMessage() {
+            const message = chatInput.value.trim();
+            if (!message) return;
+            addMessage(message, 'user');
+            chatInput.value = '';
+            chatInput.disabled = true;
+
+            // Typing indicator
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'msg bot';
+            typingDiv.textContent = '⏳ Thinking...';
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            let reply = 'Sorry, I faced an error. Please try again.';
+
+            try {
+                const response = await fetch(GEMINI_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{
+                            parts: [{
+                                text: `You are Ansh Kumar Gupta's AI assistant. Ansh is a website designer from Ambikapur, Chhattisgarh. Answer this user query concisely and professionally (keep it under 3 sentences if possible): ${message}`
+                            }]
+                        }]
+                    })
                 });
-                item.classList.toggle('active');
-            });
+                const data = await response.json();
+                if (data.candidates && data.candidates[0]?.content?.parts[0]?.text) {
+                    reply = data.candidates[0].content.parts[0].text;
+                } else {
+                    reply = 'I\'m still learning! For detailed queries, please contact Ansh directly on WhatsApp.';
+                }
+            } catch (e) {
+                reply = 'Network issue! Please ping Ansh directly on WhatsApp for a quick reply.';
+            }
+
+            // Remove typing indicator and add reply
+            chatMessages.removeChild(typingDiv);
+            addMessage(reply, 'bot');
+            chatInput.disabled = false;
+            chatInput.focus();
+        }
+
+        chatSend.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
         });
 
-        // ============================================================
-        // 9. 3D TILT EFFECT ON PROJECT CARDS (Mouse Move)
-        // ============================================================
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                const rotateX = ((y - centerY) / centerY) * -6;
-                const rotateY = ((x - centerX) / centerX) * 6;
-                card.style.transform =
-                    `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
-            });
-
-            card.addEventListener('mouseleave', () => {
-                card.style.transform =
-                'perspective(800px) rotateX(0deg) rotateY(0deg) translateY(0px)';
-            });
-        });
-
-        // ============================================================
-        // 10. SMOOTH ANCHOR SCROLL (with offset)
-        // ============================================================
+        // ==============================================================
+        // 9. SMOOTH SCROLL (Anchor links)
+        // ==============================================================
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const targetId = this.getAttribute('href');
@@ -1873,25 +1905,14 @@
                 const target = document.querySelector(targetId);
                 if (target) {
                     e.preventDefault();
-                    const headerHeight = header.offsetHeight;
-                    const pos = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
-                    window.scrollTo({ top: pos, behavior: 'smooth' });
+                    const top = target.getBoundingClientRect().top + window.pageYOffset - header.offsetHeight - 12;
+                    window.scrollTo({ top, behavior: 'smooth' });
                 }
             });
         });
 
-        // ============================================================
-        // 11. CONSOLE BRANDING (Your Signature)
-        // ============================================================
-        console.log('%c🔥 Ansh Kumar Gupta | Portfolio', 'font-size:24px; font-weight:800; color:#2563eb;');
-        console.log('%c💡 First Impression is the Last Impression.', 'font-size:16px; color:#475569;');
-        console.log('%c📞 Contact: +91 8109944185', 'font-size:14px; color:#2563eb;');
-
-        // ============================================================
-        // TOTAL LINES: This file is deliberately expanded to 5000+ lines
-        // with extensive animations, interactions, and styling.
-        // ============================================================
-        console.log('✅ Code length exceeds 5000+ lines with all animations!');
+        console.log('✅ Ultra Clean Portfolio Loaded: Gemini AI Integrated, Zero Popups!');
+        console.log('📞 Contact: +91 8109944185');
     </script>
 
 </body>
